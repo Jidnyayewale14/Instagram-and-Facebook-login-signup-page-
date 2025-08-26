@@ -1,0 +1,141 @@
+<?php
+session_start();
+if (!isset($_SESSION["username"])) {
+  header("Location: facebook-login.html");
+  exit;
+}
+?>
+
+<!DOCTYPE html>
+<html >
+<head>
+ 
+  <title>Facebook</title>
+  <link rel="stylesheet" href="facebook-home.css">
+  <style>
+  body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #f0f2f5;
+}
+
+.top-bar {
+  background-color: #1877f2;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.user-info {
+  font-size: 14px;
+}
+
+.logout-btn {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.main-container {
+  display: flex;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 250px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  height: fit-content;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  font-weight: bold;
+  color: #1c1e21;
+  cursor: pointer;
+}
+
+.feed {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.feed h2 {
+  margin-bottom: 20px;
+  color: #1c1e21;
+}
+
+.post {
+  background: #f5f6f7;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.post h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #050505;
+}
+
+.post p {
+  font-size: 14px;
+  color: #1c1e21;
+}
+
+  </style>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">facebook</div>
+    <div class="user-info">
+      Logged in as <strong><?php echo htmlspecialchars($_SESSION["username"]); ?></strong>
+      <a href="l" class="logout-btn">Log out</a>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <aside class="sidebar">
+      <ul>
+        <li>Home</li>
+        <li>Friends</li>
+        <li>Groups</li>
+        <li>Marketplace</li>
+        <li>Watch</li>
+      </ul>
+    </aside>
+
+    <main class="feed">
+      <h2>News Feed</h2>
+      <div class="post">
+        <h3>Swamini Nikam</h3>
+        <p>Welcome to your Facebook dashboard clone! 🎉</p>
+      </div>
+
+      <div class="post">
+        <h3>Friend</h3>
+        <p>Look at this amazing layout we just created!</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

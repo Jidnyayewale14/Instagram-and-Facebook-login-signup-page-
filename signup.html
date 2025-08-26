@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign up • Instagram</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .subtitle {
+  font-size: 17px;
+  color: #8e8e8e;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.fb-login-btn {
+  width: 100%;
+  padding: 8px;
+  background-color: #1877f2;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  text:white;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #8e8e8e;
+  font-size: 13px;
+}
+
+.separator .line {
+  flex: 1;
+  height: 1px;
+  background: #dbdbdb;
+}
+
+.separator span {
+  margin: 0 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 6px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.terms {
+  font-size: 11px;
+  color: #8e8e8e;
+  margin: 12px 0;
+  line-height: 1.4;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 8px;
+  background-color: #3897f0;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+
+
+  
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h1 class="logo">Instagram</h1>
+      <p class="subtitle">Sign up to see photos and videos from your friends.</p>
+      <button class="fb-login-btn"><a href ="login-facebook.html">Log in with Facebook</a></button>
+
+      <div class="separator">
+        <div class="line"></div>
+        <span>OR</span>
+        <div class="line"></div>
+      </div>
+
+      <form action="signup.php" method="POST">
+        <input type="text" name="email_or_phone" placeholder="Mobile Number or Email" required>
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <p class="terms">
+          By signing up, you agree to our <strong>Terms</strong>, <strong>Privacy Policy</strong> and <strong>Cookies Policy</strong>.
+        </p>
+        <button type="submit"><a href="instagram-home.html">Sign up</a></button>
+      </form>
+    </div>
+
+    <div class="signup-box">
+      <p>Have an account? <a href="index.html">Log in</a></p>
+    </div>
+  </div>
+</body>
+</html>

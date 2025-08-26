@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Instagram</title>
+  <link rel="stylesheet" href="instagram-home.css" />
+  <style>
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fafafa;
+}
+
+.insta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Billabong', cursive;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.search-box {
+  padding: 5px 10px;
+  width: 200px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+}
+
+.nav-icons a {
+  margin-left: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sidebar {
+  width: 180px;
+  margin-right: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.feed {
+  flex: 1;
+  max-width: 500px;
+}
+
+.post {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.post-header {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.post-image {
+  background-color: #eee;
+  text-align: center;
+  padding: 100px 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.post-actions {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.post-caption {
+  padding: 0 10px 10px;
+  font-size: 14px;
+}
+
+.suggestions {
+  width: 250px;
+  font-size: 14px;
+  color: #262626;
+}
+
+.profile-summary {
+  margin-bottom: 20px;
+}
+
+.suggestion-list p {
+  margin: 10px 0;
+}
+
+.suggestion-list a {
+  color: #3897f0;
+  text-decoration: none;
+}
+
+  </style>
+</head>
+<body>
+  <header class="insta-header">
+    <div class="logo">Instagram</div>
+    <input type="text" placeholder="Search" class="search-box" />
+    <nav class="nav-icons">
+      <a href="#">🏠</a>
+      <a href="#">📩</a>
+      <a href="#">➕</a>
+      <a href="#">❤</a>
+      <a href="#">👤</a>
+    </nav>
+  </header>
+
+  <div class="main-container">
+    <aside class="sidebar">
+      <ul>
+        <li>🏠 Home</li>
+        <li>🔍 Search</li>
+        <li>🎞 Explore</li>
+        <li>🎥 Reels</li>
+        <li>💬 Messages</li>
+        <li>❤ Notifications</li>
+        <li>➕ Create</li>
+        <li>👤 Profile</li>
+      </ul>
+    </aside>
+
+    <main class="feed">
+      <div class="post">
+        <div class="post-header">
+          <span class="post-user">Jidnya_Yewale</span>
+        </div>
+        <div class="post-image">
+          <div class="image-placeholder">[ Image Placeholder ]</div>
+        </div>
+        <div class="post-actions">
+          ❤ 💬 🔄 📥
+        </div>
+        <div class="post-caption">
+          <strong>Jidnya_Yewale</strong> Enjoying the sunshine ☀
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="post-user">friend_123</span>
+        </div>
+        <div class="post-image">
+          <div class="image-placeholder">[ Image Placeholder ]</div>
+        </div>
+        <div class="post-actions">
+          ❤ 💬 🔄 📥
+        </div>
+        <div class="post-caption">
+          <strong>friend_123</strong> Throwback to last weekend!
+        </div>
+      </div>
+    </main>
+
+    <aside class="suggestions">
+      <div class="profile-summary">
+        <strong>Jidnya_Yewale</strong><br>
+        <span style="color: gray;">Jidnya Yewale</span>
+      </div>
+      <div class="suggestion-list">
+        <p><strong>Suggestions For You</strong></p>
+        <p>💡 user_one <a href="#">Follow</a></p>
+        <p>💡 user_two <a href="#">Follow</a></p>
+        <p>💡 user_three <a href="#">Follow</a></p>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

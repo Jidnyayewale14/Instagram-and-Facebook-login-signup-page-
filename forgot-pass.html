@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forgot Password • Instagram</title>
+  <link rel="stylesheet" href="style.css">
+ <style>
+ .reset-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.back-login {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.back-login a {
+  text-decoration: none;
+  color: #00376b;
+}
+
+ </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h1 class="logo">Instagram</h1>
+      <p class="reset-text">
+        Enter your username or email and we’ll send you a link to get back into your account.
+      </p>
+      <form action="reset-password.php" method="POST">
+        <input type="text" name="identifier" placeholder="Username or email" required>
+        <button type="submit">Send Login Link</button>
+      </form>
+      <div class="back-login">
+        <a href="index.html">← Back to Login</a>
+      </div>
+    </div>
+
+    <div class="signup-box">
+      <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </div>
+</body>
+</html>
